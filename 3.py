@@ -14,8 +14,8 @@ from modules.ui_cards import song_card
 # ======================================
 # API KEY
 # ======================================
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
+GEMINI_API_KEY=os.getenv("GEMINI_API_KEY")
+YOUTUBE_API_KEY=os.getenv("YOUTUBE_API_KEY")
 genai.configure(api_key="GEMINI_API_KEY")
 
 # ======================================
@@ -80,5 +80,6 @@ if st.button("음악 추천받기"):
     else:
 
         st.info("감정 데이터가 부족합니다.")
+
 
 
