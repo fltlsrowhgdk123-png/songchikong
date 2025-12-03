@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import google.generativeai as genai
 import json
 import re
@@ -79,4 +80,5 @@ if st.button("음악 추천받기"):
     else:
 
         st.info("감정 데이터가 부족합니다.")
+
 
