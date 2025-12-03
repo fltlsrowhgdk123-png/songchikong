@@ -13,9 +13,9 @@ from modules.ui_cards import song_card
 # ======================================
 # API KEY
 # ======================================
-GEMINI_API_KEY = "AIzaSyCcXhrRPvs7WLhnCFFpPYl5Rm3fkXH1XGk"
-YOUTUBE_API_KEY = "AIzaSyCcXhrRPvs7WLhnCFFpPYl5Rm3fkXH1XGk"
-genai.configure(api_key="AIzaSyCcXhrRPvs7WLhnCFFpPYl5Rm3fkXH1XGk")
+GEMINI_API_KEY = ""GEMINI_API_KEY""
+YOUTUBE_API_KEY = "YOUTUBE_API_KEY"
+genai.configure(api_key="GEMINI_API_KEY")
 
 # ======================================
 # Streamlit UI
@@ -77,4 +77,5 @@ if st.button("음악 추천받기"):
         emotion_count = df["emotion"].value_counts()
         st.bar_chart(emotion_count)
     else:
+
         st.info("감정 데이터가 부족합니다.")
